@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="resume">
 <head>
   	<title>Vasu Jogani</title>
   	<meta charset="utf-8">
@@ -13,7 +13,7 @@
 	<h1>Vasu Jogani</h1>
 </div>
 -->
-<div class="container-fluid" ng-app="resume">
+<div class="container-fluid" >
 	<div class="row">
     	<div class="col-sm-4 left" ng-controller="listController">
     		<h1 class="largeheading">Vasu</h1>
@@ -36,15 +36,20 @@
 				</ul>
 			</div>
     	</div>
-		<div class="col-sm-8 right">
+		<div class="col-sm-8 right" ng-controller="detailCntrl">
     		<h1 class="largeheadingright"> Jogani <h1>
     		<p class="bio">
-    			I’m an avid programmer and am seeking an internship opportunity for this summer to gain experience and apply programming skills I’ve gained. I will be attending University of Texas at Austin next fall and majoring in Computer Science. blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah  blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah 
+    			{{ bio }}
     		</p>
 			<h2 class="heading"> Education </h2>
-    		<div class="category">
-    			<div class="">
-    		</div>
+			<div class="category" ng-repeat="ed in education">
+				<div class="cattitle">
+					{{ed.name}} - <i> {{ed.year}} </i>
+				</div>
+				<div class="catdescription">
+					<p> {{ed.desp}} </p>
+				</div>
+			</div>
     	</div>
   	</div>
 </div>
@@ -53,7 +58,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
-	<script src="resume.js"></script>    
+	<script src="resume.js"></script>
+	
 	
 </body>
 </html>

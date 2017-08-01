@@ -24,3 +24,13 @@ app.controller('listController', function($scope){
 	$scope.languages=["C/C++ - Algorithms","Java - Android Development", "JavaScript - Angular, Node.js, Vue.JS", "HTML/CSS - Pug, Bootstrap", "Python - Competitive Programming"];
 	
 });
+
+
+app.controller('detailCntrl', function($scope){
+	$scope.msg="hel";
+	$scope.bio = "I’m an avid programmer and am seeking an internship opportunity for this summer to gain experience and apply programming skills I’ve gained. I will be attending University of Texas at Austin next fall and majoring in Computer Science. blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah  blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah ";
+	$scope.education=[
+		{name:"University of Texas at Austin", year: "2017-2021", desp: "ahblahblah blah blahblah blah blah blah blah blah blah"},
+		{name:"Round Rock High School", year: "2013-2017", desp:"I specialized in STEM with a 3.9 GPA. ahblahblah blah blahblah blah blah blah blah blah blah"}
+	];
+});
