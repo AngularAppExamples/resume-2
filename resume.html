@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Vasu Jogani</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+<body>
+
+<!--<div class="jumbotron cnt nomargin">
+	<h1>Vasu Jogani</h1>
+</div>
+-->
+<div class="container-fluid" ng-app="resume">
+	<div class="row">
+    	<div class="col-sm-4 left" ng-controller="listController">
+    		<h1 class="largeheading">Vasu</h1>
+			<div class="credentials margintop lipadding">
+				<ul class="uilist">
+					<li class="item" ng-repeat="x in info">{{x}}</li>
+					<li class="item" ng-repeat="x in links"><a href={{x.link}}>{{x.inf}}</a></li>
+				</ul>
+			</div>
+			<div class="achievements margintop lipadding">
+				<h2 class="header">Known For</h2>
+				<ul class="uilist">
+					<li class="item" ng-repeat="l in knowns"> {{l.pre}} <i><a href={{l.link}}> {{l.linktxt}}</a></i></li>
+				</ul>
+			</div>
+			<div class="fluent margintop lipadding">
+				<h2 class="header">Fluent In</h2>
+				<ul class="uilist">
+					<li class="item" ng-repeat="x in languages">{{x}}</li>
+				</ul>
+			</div>
+    	</div>
+		<div class="col-sm-8 right">
+    		<h1 class="largeheadingright"> Jogani <h1>
+    		<p class="bio">
+    			I’m an avid programmer and am seeking an internship opportunity for this summer to gain experience and apply programming skills I’ve gained. I will be attending University of Texas at Austin next fall and majoring in Computer Science. blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blahblahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah  blah blahblah blah  blah blah blah  blah blahblah blah blahblah blah blah blah blah blah blah 
+    		</p>
+			<h2 class="heading"> Education </h2>
+    		<div class="category">
+    			<div class="">
+    		</div>
+    	</div>
+  	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<script src="resume.js"></script>    
+	
+</body>
+</html>
