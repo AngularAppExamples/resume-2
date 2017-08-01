@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="resume">
+<html lang="en" ng-app="resume" ng-cloak>
 <head>
   	<title>Vasu Jogani</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="resume.css">
+  	<style>
+	  	[ng\:cloak], [ng-cloak], .ng-cloak {
+  			display:none;
+  		}
+ 	</style>
 </head>
 <body>
 
@@ -41,13 +46,18 @@
     		<p class="bio">
     			{{ bio }}
     		</p>
-			<h2 class="heading"> Education </h2>
-			<div class="category" ng-repeat="ed in education">
-				<div class="cattitle">
-					{{ed.name}} - <i> {{ed.year}} </i>
-				</div>
-				<div class="catdescription">
-					<p> {{ed.desp}} </p>
+    		<div ng-repeat="x in everything" ng-init="parentIndex = $index">	
+				<h2 class="heading"> {{x.title}} </h2>
+				<div class="category" ng-repeat="y in x.topics">
+					<div class="cattitle" ng-if="$parent.$index==0">
+						{{y.name}} - <i> {{y.year}} </i>
+					</div>
+					<div class="cattitle" ng-if="$parent.$index>0">
+						{{y.name}} 
+					</div>
+					<div class="catdescription">
+						<p> {{y.desp}} </p>
+					</div>
 				</div>
 			</div>
     	</div>
