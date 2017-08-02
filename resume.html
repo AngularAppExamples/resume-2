@@ -20,7 +20,7 @@
 -->
 <div class="container-fluid" >
 	<div class="row">
-    	<div class="col-sm-4 left" ng-controller="listController">
+    	<div class="col-sm-3 left" ng-controller="listController">
     		<h1 class="largeheading">Vasu</h1>
 			<div class="credentials margintop lipadding">
 				<ul class="uilist">
@@ -41,22 +41,23 @@
 				</ul>
 			</div>
     	</div>
-		<div class="col-sm-8 right" ng-controller="detailCntrl">
+		<div class="col-sm-9 right" ng-controller="detailCntrl">
     		<h1 class="largeheadingright"> Jogani <h1>
     		<p class="bio">
     			{{ bio }}
     		</p>
-    		<div ng-repeat="x in everything" ng-init="parentIndex = $index">	
-				<h2 class="heading"> {{x.title}} </h2>
+    		<!--ng-init="parentIndex = $index"-->	
+    		<div ng-repeat="x in everything" ng-init="parentIndex = $index">    		
+				<h2 class="heading">{{x.head}} </h2>
 				<div class="category" ng-repeat="y in x.topics">
-					<div class="cattitle" ng-if="$parent.$index==0">
-						{{y.name}} - <i> {{y.year}} </i>
+					<div class="cattitle">
+						{{y.name}} - <i> {{y.title}} </i>
 					</div>
-					<div class="cattitle" ng-if="$parent.$index>0">
+					<!--<div class="cattitle" ng-if="$parent.$index>0">
 						{{y.name}} 
-					</div>
+					</div>-->
 					<div class="catdescription">
-						<p> {{y.desp}} </p>
+						<p> {{ y.desp}} </p>
 					</div>
 				</div>
 			</div>

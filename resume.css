@@ -6,7 +6,11 @@
 
 @media only screen and (min-width: 767px) {
 }
-
+.row {
+	float:left;
+    width:100%;
+    background:#1499D3;
+}
 .jumbotron {
 	background: #1499D3;
 	color: #ffffff;
@@ -15,6 +19,8 @@
     font-size: 4.3em;	
 	font-weight: bold;
 	padding: 5pt;
+	margin-top:0;
+	padding-top:0;
 }
 
 .largeheadingright {
@@ -22,6 +28,8 @@
 	font-weight: bold;
 	padding:5pt;
 	color:#1499D3;
+	margin-top:0;
+	padding-top:0;
 }
 .body {
 	min-height: 100%;
@@ -43,6 +51,7 @@
     background: #1499D3;
     color: #ffffff;
     padding:5pt;
+	float: left;
 }
 
 .right {
@@ -71,6 +80,8 @@
 	width:100%;
 	font-size: 26pt;
 	font-weight: 250;
+	margin-top: 8pt;
+	margin-bottom:8pt;
 }
 
 a {
@@ -115,11 +126,15 @@ a:hover {
     font-family: Verdana;
     font-size: 15pt;
 	font-weight: 500;
+	padding: 2pt;
 }
 
 
 .catdescription{
+	margin-top: 2pt;
 	font-size: 11pt;
     letter-spacing: .2pt;
     color: #333030;
+    font-family: Verdana;
+    padding: 1pt;
 }
