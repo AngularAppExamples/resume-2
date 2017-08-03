@@ -96,6 +96,149 @@ a:hover {
 }
 
 
+.header {
+	padding-top: 0;
+	margin-top:0;
+}
+
+.nomargin {
+	margin:0;
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:0;
+	margin-left:0;
+}
+
+.margintop {
+	margin-top:2pt;
+}
+
+.lipadding {
+	padding:10pt;
+}
+
+.border {
+    border: 5px solid red;
+}
+
+.cattitle {
+	color: #000;
+    font-family: Verdana;
+    font-size: 15pt;
+	font-weight: 500;
+	padding: 2pt;
+}
+
+
+.catdescription {
+	margin-top: 2pt;
+	font-size: 11pt;
+    letter-spacing: .2pt;
+    color: #333030;
+    font-family: Verdana;
+    padding: 1pt;
+}
+
+/* 
+@media only screen and (max-width: 767px) {
+  	.largeheading {
+    	display: none !important; 
+    }
+}
+
+@media only screen and (min-width: 767px) {
+	.smallheading{
+		display: none;
+	}
+}
+ 
+.row {
+    width:100%;
+    background:#1499D3;
+}
+ 
+.jumbotron {
+	background: #1499D3;
+	color: #ffffff;
+}
+.largeheading {
+    font-size: 4.3em;	
+	font-weight: bold;
+	padding: 5pt;
+	margin-top:0;
+	padding-top:0;
+}
+
+.largeheadingright {
+	font-size: 4.3em;
+	font-weight: bold;
+	padding:5pt;
+	color:#1499D3;
+	margin-top:0;
+	padding-top:0;
+}
+.body {
+	min-height: 100%;
+	height:100%;
+}
+
+.cnt {
+	text-align: center;
+}
+
+.uilist {
+    list-style:none;
+}
+
+.left{
+    text-align: right;
+    font-size: 1.3em;
+	font-family: Verdana;
+    background: #1499D3;
+    color: #ffffff;
+    padding:5pt;
+}
+
+.right {
+	background: #ffffff;
+	font-size: 1.3em;
+	font-family:"Verdana";
+	padding: 5pt;
+	text-align: left;
+	color: #000000;
+	padding-left:10pt;
+	padding-right: 15pt;
+}
+
+.bio {
+	font-size:11.5pt;
+	font-style: normal;
+	font-variant: normal;
+    letter-spacing: .5pt;
+    line-height: 1.3em;
+
+}
+
+.heading {
+	color:#1499D3;
+	display: block;
+	width:100%;
+	font-size: 26pt;
+	font-weight: 600;
+	margin-top: 8pt;
+	margin-bottom:8pt;
+}
+
+a {
+	color: #ffffff !important;
+  	opacity: .6;
+	transition: opacity 0.2s ease-in-out; 
+}
+a:hover {
+	opacity: 1; 
+}
+
+
 .header{
 	padding-top: 0;
 	margin-top:0;
@@ -124,8 +267,8 @@ a:hover {
 .cattitle{
 	color: #000;
     font-family: Verdana;
-    font-size: 15pt;
-	font-weight: 500;
+    font-size: 13pt;
+	font-weight: 600;
 	padding: 2pt;
 }
 
@@ -138,3 +281,4 @@ a:hover {
     font-family: Verdana;
     padding: 1pt;
 }
+ */

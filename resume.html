@@ -50,15 +50,21 @@
     		<div ng-repeat="x in everything" ng-init="parentIndex = $index">    		
 				<h2 class="heading">{{x.head}} </h2>
 				<div class="category" ng-repeat="y in x.topics">
-					<div class="cattitle">
+					<div class="cattitle" ng-if="$parent.$index<3">
 						{{y.name}} - <i> {{y.title}} </i>
 					</div>
 					<!--<div class="cattitle" ng-if="$parent.$index>0">
 						{{y.name}} 
 					</div>-->
-					<div class="catdescription">
+					<div class="catdescription" ng-if="$parent.$index<3">
 						<p> {{ y.desp}} </p>
 					</div>
+					<div class="catdescription" ng-if="$parent.$index>2">
+						<p> {{ y}} </p>
+					</div>
+
+					
+
 				</div>
 			</div>
     	</div>
