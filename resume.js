@@ -28,7 +28,7 @@ app.controller('detailCntrl', function($scope){
 		{
 			head: "Education",
 			topics: [
-				{name:"University of Texas at Austind", title: "2017-2021", desp: " blah blah blah blah blah"},	
+				{name:"University of Texas at Austin", title: "2017-2021", desp: " blah blah blah blah blah"},	
 				{name:"Round Rock High School", title: "2013-2017", desp:" I specialized in STEM with a 3.9 GPA. ahblahblah blah blahblah blah blah blah blah blah blah"}
 			]
 		},
